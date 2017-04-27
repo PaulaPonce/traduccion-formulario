@@ -14,8 +14,8 @@ function translate(){
 translate();
 
 function mostrarDatos() {
-	 var ie = document.getElementById("inputEmail");
-	 var ip = document.getElementById("inputPassword");
-	 document.getElementById("mostrarEmail").innerHTML = ie.value;
-	 document.getElementById("mostrarPass").innerHTML = ip.value;
+	var email = document.getElementById("inputEmail").value;
+	var password = document.getElementById("inputPassword").value;
+	document.getElementById("mostrarEmail").innerHTML = "El correo electrónico ingresado es: <br>" + email;
+	document.getElementById("mostrarPass").innerHTML = "La contraseña ingresada es: <br>" + password;
 }
