@@ -33,19 +33,15 @@
             <span>Remember me<span>
           </label>
         </div>
+            
+        <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit" onclick="mostrarDatos(); return false">Sign in</button>
+        <h2><br>Datos de formulario</h2> 
+        <div id="mostrarEmail"></div>
+        <div id="mostrarPass"></div> 
+            
       </form>
-      <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit" onclick="mostrarDatos()">Sign in</button>
-      <div class="container">
-        <form class="form-signin">
-        <h2><br>Datos de formulario</h2>
-          <p>El correo electrónico ingresado es:</p>
-          <p id="mostrarEmail"></p>
-          <p>La clave ingresada es:</p>
-          <p id="mostrarPass"></p>
-        </form> 
-      </div>
     </div> 
-    <!-- /container -->
+
     <script type='text/javascript' src='js/main.js'></script>
   </body>
 </html>
