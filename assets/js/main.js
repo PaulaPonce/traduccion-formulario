@@ -11,12 +11,11 @@ function translate(){
 	remember.innerHTML = "Recordar datos";
 	button.innerHTML = "Iniciar Sesión";
 }
-
 translate();
 
 function mostrarDatos() {
-	var ie = document.getElementById("inputEmail");
-	var ip = document.getElementById("inputPassword");
-	document.write("El correo electrónico ingresado es:<br>" + ie.value + "<br><br>");
-	document.write("La clave ingresada es:<br>" + ip.value);
+	var email = document.getElementById("inputEmail").value;
+	var password = document.getElementById("inputPassword").value;
+	document.getElementById("mostrarEmail").innerHTML = "El correo electrónico ingresado es: <br>" + email;
+	document.getElementById("mostrarPass").innerHTML = "La contraseña ingresada es: <br>" + password;
 }
