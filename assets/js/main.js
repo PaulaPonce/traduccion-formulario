@@ -17,7 +17,8 @@ translate();
 
 //Función que muestra los datos ingresados al formulario
 function mostrarDatos() {
-	if((email.value != "") && (!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email.value)) && (password.value != "")) {
+	var emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	if((email.value != "") && (emailRegExp.test(email.value)) && (password.value != "")) {
 		var html = "<div class='form-signin submit-info'>";
 		html += "<h3>Datos de formulario</h3>";
 		html += "<p>El correo electrónico ingresado es: <b>" + email.value + "</b></p>";
